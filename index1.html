@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Site</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Shopify</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to Shopify</h2>
+        <p>Your favorite place to shop online!</p>
+        <button onclick="scrollToProducts()">Shop Now</button>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product" id="product1">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product 1</h3>
+                <p>$25.00</p>
+                <button onclick="addToCart('Product 1', 25)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product 2</h3>
+                <p>$30.00</p>
+                <button onclick="addToCart('Product 2', 30)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button onclick="checkout()">Proceed to Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

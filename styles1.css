@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    margin-bottom: 1em;
+}
+
+.hero button {
+    padding: 0.5em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Product Section */
+.products {
+    padding: 2em;
+    background-color: #fafafa;
+}
+
+.product-list {
+    display: flex;
+    gap: 2em;
+}
+
+.product {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 150px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cart Section */
+.cart {
+    padding: 2em;
+    background-color: #f8f8f8;
+}
